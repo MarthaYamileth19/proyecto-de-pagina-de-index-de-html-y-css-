@@ -1,0 +1,133 @@
+:root{
+    --colornav: #1E2F97; 
+    --colormenu:  rgb(206, 218, 228);
+    --colorh1: #4ADFDD;
+    --colorh2: #797EF6;
+    --colortexto: black;
+    --colorborde: rgb(93, 90, 90);
+}
+nav{
+    background-color: var(--colornav);
+    padding: 20px;
+    text-align: center;
+}
+.menu{
+    color: var(--colormenu);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+.menu:hover{
+    color: var(--colorh2);
+    text-decoration: underline;
+    font-weight: bold;
+}
+h1{
+    color: var(--colormenu);
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke: 1px var(--colorborde);
+}
+h2{
+    color: var(--colorh2);
+    font-size: 40px;
+    -webkit-text-stroke: 1px var(--colormenu);
+     font-weight: bold;
+}
+h3{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: var(--colornav);
+    text-align: center;
+    font-size: 35px;
+    -webkit-text-stroke: 1px var(--colormenu);
+}
+.texto{
+    text-align: justify;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+.imagen{
+    text-align: center;
+    border: 1px solid var(--colorborde);
+    box-shadow: 1px 1px 3px 1px var(--colorborde);
+}
+.ver{
+border: 2px solid var(--colortexto);
+background-color: var(--colortexto);
+color: var(--colormenu);
+text-decoration: none;
+border-radius: 25px;
+}
+.inf{
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+}
+.con{
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    display: grid;
+    margin: 0 auto;
+}
+@media (min-width:320px) and (max-width:480px){
+    nav{
+        display: grid;
+        font-size: 5px;
+        padding: 5px;
+    }
+    h1{
+        color: var(--colorh2);
+    }
+    h2{
+        color: var(--colorh1);
+    }
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    iframe{
+        width: 430px;
+        height: 400px;
+    }
+    .img{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+}
+    span{
+        display: none;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+    nav{
+        display: grid;
+        font-size: 5px;
+        padding: 5px;
+    }
+    h1{
+        color: var(--colorh2);
+    }
+    h2{
+        color: var(--colorh1);
+    }
+    h3{
+        text-align: center;
+    }
+    iframe{
+        width: 780px;
+        height: 800px;
+    }
+    .img{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 30px;
+    
+    }
+}
